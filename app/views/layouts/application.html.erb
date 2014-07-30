@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailsKendo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <ul data-role="menu">
+    <li>Rails</li>
+    <li>Kendo UI
+      <ul>
+        <li>Grid</li>
+        <li>TreeView</li>
+        <li>Angular</li>
+      </ul>
+    </li>
+  </ul>
+
+<%= yield %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+</body>
+</html>
